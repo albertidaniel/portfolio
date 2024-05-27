@@ -40,6 +40,7 @@ body {
     justify-content: space-between;
     padding: 30px 0;
     align-items: center;
+    
 }
 
 header nav a {
@@ -70,7 +71,6 @@ header nav a:hover {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-    max-width: 500px;
     padding: 10px;
 }
 
@@ -92,9 +92,19 @@ header nav a:hover {
     border-radius: 50%;
 }
 
+.cv > * {
+    margin-top: 5px;
+}
+
 .poster {
-    height: 250px;
+    height: 100%;
     width: auto;
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    z-index: 1000;
+    opacity: 0.2;
+    margin-right: 1px;
 }
 
 .flag {
@@ -151,7 +161,7 @@ header nav a:hover {
     width: 100%;
     padding: 20px;
     opacity: 0;
-    transition: .3s
+    transition: .5s
 }
 
 .proyect-title {
@@ -161,9 +171,7 @@ header nav a:hover {
 
 .proyect-container {
     max-width: 1200px;
-    margin: auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin: 25px auto 20px;
     text-align: center;
 }
 
@@ -217,8 +225,12 @@ header nav a:hover {
 }
 
 .skills-container h3 {
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 20px;
+}
+
+.skills-title {
+    margin-top: 10px;
 }
 
 .skills-subsection {
