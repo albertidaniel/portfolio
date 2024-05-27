@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #d3ecf9;
+}
+
+/*Start secction******************************************************************************/
+
+#start {
+    display: flex;
+
+    background: linear-gradient(to right, #000c67, #007be5);
+    height: auto;
+    padding: 0 20px;
+}
+
+.poster {
+    opacity: 0.8;
+}
+
+.start .content {
+    max-width: 1200px;
+    margin: auto;
+    color: #fff;
+}
+
+.start header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border: 2px transparent;
+}
+
+header nav a:hover {
+    border-bottom: 2px solid hsl(151, 100%, 45%);
+}
+
+#social a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+#social a:hover {
+    color: hsl(151, 100%, 45%);
+}
+
+#aboutme .col {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    max-width: 500px;
+    padding: 10px;
+}
+
+#aboutme .col .intro {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#aboutme {
+    display: flex;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    flex-direction: row;
+}
+
+.profile-img {
+    height: 250px;
+    width: auto;
+    border-radius: 20px;
+}
+
+.poster {
+    height: 250px;
+    width: auto;
+}
+
+.flag {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.flag:hover {
+    scale: 1.1;
+}
+
+.shadow {
+    filter: drop-shadow(0em 30px 20px #9bd2f4);
+}
+
+/*Proyect Section*********************************************************************************/
+.proyect {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.proyect-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 30px;
+    
+}
+
+.proyect-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8d8d8d;
+    background-color: #fff;
+    height: 200px;
+    width: 330px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.proyect-card .info {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color:#fff ;
+    width: 100%;
+    padding: 20px;
+    opacity: 0;
+    transition: .3s
+}
+
+.proyect-title {
+    color: #000c67;
+    margin-bottom: 20px;
+}
+
+.proyect-container {
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.proyect-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.proyect-card:hover{
+    border: 3px solid #000c67;
+}
+
+.proyect-card:hover .info{
+    opacity: 1;
+    top: 0;
+}
+
+.proyect-links a {
+    padding: 10px;
+}
+
+.tools {
+    justify-content: space-between;
+}
+
+.languages {
+    display: flex inline-block;
+}
+
+/*Skill Section*********************************************************************************/
+
+.skills {
+    background: linear-gradient(to right, #000c67, #007be5);
+    color: #fff;
+}
+
+.skills-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-container h3 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.skills-subsection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 30px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills-subsection img {
+    width: 100px;
+    height: auto;
+}
+
+/*******************************************************************************************/
+@media only screen and (max-width: 730px) {
+    #aboutme {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .hide {
+        display: none;
+    }
+}
